@@ -1,0 +1,175 @@
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+.corpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.battlefield{
+    display: flex;
+    width: 45%;
+    height: 45%;
+    background-color: #0099ff;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.campo{
+    display: flex;
+    background-color: #fff;
+    width: 35%;
+    height: 75%;
+    border: 1px solid black;
+}
+.vs{
+    color: #fff;
+    font-size: 3em;
+}
+.div-botao{
+    width: 40%;
+    height: 10%;
+    display: flex;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.botao{
+    height: 4em;
+    width: 10em;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    background-color: #0099ff;
+    color: #fff;
+    
+}
+.botao:hover{
+    color: #0099ff;
+    background-color: #fff;
+
+}
+.vencedor{
+    width: 20%;
+    height: 10%;
+    background-color: #0099ff;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    font-size: 1.3em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.campo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap-placar{
+    width: 30%;
+    height: 20%;
+    background-color: #0099ff;
+    margin: 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 20px;
+}
+.placar{
+    height: 80%;
+    width: 33%;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 5em;
+
+}
+.icone-jogador-bot{
+    display: flex;
+    background-color: #0099ff;
+    width: 3.2em;
+    height: 3.2em;
+    background-color: #fff;
+    border-radius: 200px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.wrap-icone-jogador{
+    display: flex;
+}
+.checkbox{
+    height: 1em;
+    width: 1em;
+    border: 1px solid black;
+}
+.checkbox:hover{
+    background-color: rgb(218, 218, 218);
+}
+.checkbox2{
+    background-color: black;
+}
+.melhor-de-tres{
+    display: flex;
+    width: 8%;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
+    margin: .5em;
+    justify-content: space-between;
+}
+.alerta{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 2;
+}
+.wrap-alerta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    background-color: #a5a5a5;
+    border: 3px solid black;
+}
+.mensagem{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+.alerta2{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
