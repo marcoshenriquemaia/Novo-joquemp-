@@ -10,6 +10,7 @@ const $reiniciar = document.querySelector('.botao-reiniciar');
 const $checkbox = document.querySelector('.checkbox');
 const $alerta = document.querySelector('.alerta');
 const $mensagem = document.querySelector('.mensagem');
+const $botaoAlerta = document.querySelector('.botao-alerta');
 const opcao = ["pedra", "papel", "tesoura"]
 
 let jogadaJogador;
@@ -140,23 +141,29 @@ $checkbox.addEventListener('click', function (event) {
 
 function melhorDeTres() {
     if (pontuacaoJogador2 <3 && pontuacaoJogador1 < 3) {
-        $resultado.innerHTML = "Melhor de três";
+        $resultado.innerHTML = "Melhor de cinco";
     } else if (pontuacaoJogador2 == 3) {
-        $resultado.innerHTML = "O BOT ganhou a MD3";
-        mostrarPerdeu();
+        $resultado.innerHTML = "O BOT ganhou a MD5";
+        setTimeout(mostrarPerdeu, 500);
     } else {
-        $resultado.innerHTML = "Você ganhou a MD3";
-        mostrarGanhou();
+        $resultado.innerHTML = "Você ganhou a MD5";
+        setTimeout(mostrarGanhou, 500);
     }
 }
 
 function mostrarGanhou(){
-    $mensagem.innerHTML = 'Você ganhou a MD3!';
-    $alerta.classList.contains('alerta2');
+    $mensagem.innerHTML = 'Você ganhou a MD5!';
+    $alerta.classList.toggle('alerta2');
 }
 function mostrarPerdeu(){
-    $alerta.classList.contains('alerta2');
-    $mensagem.innerHTML = 'O BOT ganhou a MD3!';
+    $alerta.classList.toggle('alerta2');
+    $mensagem.innerHTML = 'O BOT ganhou a MD5!';
 }
+
+$botaoAlerta.addEventListener('click', function(event){
+    $alerta.classList.toggle('alerta2');
+    limpar();
+})
+
 
 
