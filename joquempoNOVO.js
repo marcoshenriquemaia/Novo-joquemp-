@@ -1,3 +1,5 @@
+// Arruamar bud da fica só papel
+
 const $pedra = document.querySelector(".botao-pedra");
 const $papel = document.querySelector(".botao-papel");
 const $tesoura = document.querySelector('.botao-tesoura');
